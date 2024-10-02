@@ -1,0 +1,53 @@
+Deliverables
+------------
+
+- business case
+- Scope statement
+- risico analyse
+- MVP
+	(Minimal Viable Product) => minimaal iets van het gehele product dat ze al live kunnen brengen door niet zo ingewikkelde 
+	dingen uit te rollen en de meer technische uit te werken en later pas uit te rollen en aan te passen
+	
+	
+	
+	
+ Mitigeren (zoek op)
+	
+	-**Definitie van mitigeren:**
+
+Mitigeren betekent het nemen van maatregelen om de impact van een bepaald risico of probleem te verminderen of te verzachten. 
+In plaats van het risico volledig te elimineren, probeert men de negatieve gevolgen ervan te beperken.
+
+**Voorbeelden van mitigeren binnen projectmanagement:**
+
+1. **Risicoanalyse en risicobeheer:**
+   Bij het plannen van een project identificeer je mogelijke risico's die het succes kunnen beïnvloeden, 
+   zoals vertragingen in de levering of technische problemen. Mitigatieacties kunnen zijn:
+   - Alternatieve leveranciers zoeken om het risico van leveringsproblemen te verkleinen.
+   - Een buffer inbouwen in de planning om tijd te winnen bij onverwachte vertragingen.
+
+2. **Kwaliteitsbeheer:**
+   Als er een risico bestaat dat de kwaliteit van het projectoutput niet aan de verwachtingen voldoet, 
+   kunnen mitigatieacties zijn:
+   - Regelmatige kwaliteitscontroles tijdens het proces uitvoeren om problemen vroegtijdig op te sporen.
+   - Extra training geven aan het team om te zorgen dat de kwaliteitseisen worden begrepen en nageleefd.
+
+3. **Budgetbeheer:**
+   Bij budgetoverschrijdingen kun je mitigeren door een deel van het budget als reserve te houden 
+   voor onvoorziene uitgaven. Andere mitigatieacties kunnen zijn:
+   - De kostenprognoses regelmatig herzien en aanpassen om te zorgen dat ze nauwkeurig blijven.
+   - Alternatieve oplossingen zoeken die kostenefficiënter zijn.
+
+4. **Personeelsbeheer:**
+   Het risico dat sleutelpersonen uitvallen kan worden gemitigeerd door:
+   - Back-up personeel beschikbaar te houden dat snel kan invallen.
+   - Kennisdeling bevorderen zodat de kennis van één persoon door meerdere teamleden gedragen wordt.
+
+Door risicofactoren tijdig te identificeren en passende maatregelen te nemen, kan de impact 
+op de voortgang en het succes van een project aanzienlijk worden beperkt.
+
+
+
+
+
+
