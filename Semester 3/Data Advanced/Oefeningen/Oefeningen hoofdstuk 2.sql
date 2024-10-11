@@ -131,7 +131,7 @@ and original_language = 'fr';
 create index verbeter_index
 on imdb
 (title, release_date, overview, imdb_ranking)
-TABLESPACE index_demo;   -- 6 seconden sneller
+TABLESPACE index_demo;   -- 6 milliseconden sneller
 
 --Oefeningen Synonym
 --------------------
