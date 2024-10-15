@@ -1,0 +1,175 @@
+
+
+Naam Maui Project:  "Travelers Backpack" (D&D, toekomstig ook andere games)
+---------------------------------------------------------------------------
+
+- Welkom's venster
+
+- Inlog venster
+	- Welkom "gebruiker"
+	
+- Kies je Character's Backpack
+	- Je kan verschillende characters aanmaken op je profiel
+	- Keuze uit DM/GM of Player
+	
+- Backpack inhoud
+	- bij gebruik item-- (indien item 1 => 0: item verwijderen uit backpack)
+	- items plaatsen in "backpack", "Pouch", "Chest"(gaat niet mee op quest)
+	
+- Item Sharing
+	- vrienden kunnen items naar elkaar "versturen" 
+		- optioneel kunnen 
+			- gebruikers een item instellen als favoriete item
+	- DM/GM functie: deelt items uit na een gevecht of tijdens exploratie
+		- Items toevoegen aan "gevecht" of "exploratie" en deze kunnen verdelen naar de spelers (vrienden) (Zo kan de DM een keuze maken van hoeveel van elk gevonden is afhankelijk van "Investigation Roll")
+
+- Coin Available
+	- aanpassen PP, GP, SP, CP (bij het krijgen van een GP vragen om het op te slaan als 1 GP of 10 SP enz)
+	- toevoegen en verwijderen van coin
+
+- Item store
+	- Filteren op Armor, Potion, Ring, Rod, Scroll, Staff, Wand, Weapon, Wondrous, Other Gear
+	- Filter voor prijs laag naar hoog (of andersom)
+		- Pop-up met informatie van het product als je het aanduid in de lijst
+		- Pop-up bij Buy-button: Aantal stuks kopen => gaat van uw coin pouch af
+	- Optioneel - Extra filter: Common, Magical, Container
+
+- Settings
+	- Dark Mode/Light Mode
+	- Sound on/off
+	- Prevent Screen Auto-lock
+	- User Profile
+	- User pic
+
+
+- Flyout
+	- Home (character choosing)
+	- Coin Pouch
+	- Backpack
+	- Item Store
+	- Settings
+	- Sign Out
+
+
+
+Voorstel van MAUI Project:
+--------------------------
+
+1) Naam en Beschrijving
+-----------------------
+Naam: Traveler's Backpack
+Beschrijving: Een inventarisatie app voor D&D, een plaats om items en wapens en dergelijke in te bewaren, aankopen en ruilen. 
+
+2) Gebruikers
+-------------
+Gebruikers: De TTRPG community die niet perse met een laptop wilt spelen, maar toch via een mobiele applicatie enkel zijn inventaris wilt bijhouden.
+
+	Optie om in de toekomst je spel te kiezen en in de achtergrond wordt de inventaris aangepast ((opgehaald van een API specifiek voor dat spel), (zelf geschreven API om te kunnen gebruiken)) :
+		-Pathfinder
+		-Warhammer
+		-Shadowrun
+		-Starfinder
+		-Call of Cthulhu
+		-The Witcher TRPG
+		-Cyberpunk RED
+		-enz
+		
+		==> gekozen voor een spel, je backpack wordt geladen in correspondentie van dat spel. Geen mengelmoes van D&D backpack en daaronder ene voor Cyberpunk
+			deze blijven mooi apart in hun spel.
+
+3) Functionaliteiten
+--------------------
+3.1) User Story
+---------------
+
+- Inlog venster
+	- inloggen
+		- Als gebruiker wil ik me kunnen inloggen zodat mijn opgeslagen data opgehaald wordt.
+
+- Backpack inhoud
+	- items plaatsen in "backpack", "Pouch", "Chest"(gaat niet mee op quest)
+		- Als gebruiker wil ik aangekochte items kunnen plaatsen in mijn rugzak zodat ik deze mee kan nemen tijdens een quest.
+		- Als gebruiker wil ik mijn "coin" kunnen beheren in mijn pouch zodat ik een overzicht heb van mijn geld.
+		- Als gebruiker wil ik al mijn extra items kunnen achterlaten in een "Chest" in het kamp of in de "Inn" zodat ik dit niet moet mee dragen tijdens een quest.
+
+- Item sharing
+	- items van 1 user naar een andere verplaatsen (ruilen)
+		- Als gebruiker wil ik een item van mij geven aan "in game - vrienden" zodat zij gebruik kunnen maken er van.
+	- optioneel kunnen 
+		- gebruikers een item instellen als favoriete item
+			- Als gebruiker wil ik Items toevoegen aan mijn favorieten om deze makkelijker te vinden en sneller te kunnen gebruiken.
+	- DM/GM functie
+		- Items toevoegen aan "gevecht" of "exploratie" en deze kunnen verdelen naar de spelers (vrienden) (Zo kan de DM een keuze maken van hoeveel van elk gevonden is afhankelijk van "Investigation Roll")
+			- Als DM wil ik tijdens het verhaal items die de spelers vinden kunnen versturen naar hun rugzak en puches, zodat ze dit verdiend hebben tijdens hun quest.
+			
+- Coin Available
+	- aanpassen PP, GP, SP, CP (bij het krijgen van een GP vragen om het op te slaan als 1 GP of 10 SP enz)
+		- Als gebruiker wil ik ... zodat ik ...
+	- toevoegen en verwijderen van coin
+		- Als gebruiker wil ik ... zodat ik ... 
+
+- Item store
+	- Filteren op Armor, Potion, Ring, Rod, Scroll, Staff, Wand, Weapon, Wondrous, Other Gear
+		- Als gebruiker wil ik kunnen filteren op objecten zodat ik sneller mijn item kan vinden dat ik wil kopen.
+	- Filter voor prijs laag naar hoog (of andersom)
+		- Pop-up met informatie van het product als je het aanduid in de lijst
+		- Pop-up bij Buy-button: Aantal stuks kopen => gaat van uw coin pouch af
+			- Als gebruiker wil ik ook kunnen filteren op prijs zodat ik kan zien wat ik kan kopen binnen mijn prijsklasse
+			- Als gebruiker wil ik kunnen klikken op een item en informatie krijgen over het item zodat ik een keuze kan maken als het wel een item is voor mij
+			- Als gebruiker wil ik als ik op de buy knop klik een manier zien om het aantal aan te duiden zodat ik een groter aantal van hetzelfde item kan aankopen
+
+- Settings
+	- Dark Mode/Light Mode
+		- Als gebruiker wil ik kunnen swappen tussen light en dark mode zodat ik de sfeer kan aanpassen voor mijn ogen
+	- Sound on/off
+		- Als gebruiker wil ik het geluid van de app aan en uit kunnen zetten zodat ik kan kiezen tussen sfeer geluiden of geen geluid
+	- Prevent Screen Auto-lock
+		- Als gebruiker wil ik iets aanduiden zodat ik mijn scherm aan kan laten zonder dat het in sluimerstand gaat
+	- User Profile
+		- Als gebruiker wil ik mijn gamertag en info kunnen ingeven zodat ik blij ben met het vervolledigen van mijn playercard 
+	- User pic
+		- Als gebruiker wil ik een profielfoto toevoegen zodat ik mijn profiel volledig kan vervolledigen 
+
+
+- Flyout
+	- Home (character choosing)
+		- Als gebruiker wil ik op home kunnen klikken zodat ik sneller naar de homepagina kan gaan
+	- Coin Pouch
+		- Als gebruiker wil ik op mijn coin pouch kunnen klikken zodat ik rechtstreeks naar mijn coin pouch wordt gebracht
+	- Backpack
+		- Als gebruiker wil ik op mijn rugzak kunnen klikken zodat ik meteen alles in mijn rugzak kan zien
+	- Item Store
+		- Als gebruiker wil ik op de winkel kunnen klikken zodat ik meteen aankopen kan doen en in de winkel ben
+	- Settings
+		- Als gebruiker wil ik op instellingen kunnen klikken zodat ik meteen de pagina met instellingen kan zien
+	- Sign Out
+		- Als gebruiker wil ik me kunnen uitloggen zodat ik met een ander account kan inloggen
+
+3.2) Mock-up
+
+4) Data
+-------
+
+5) Inspiratie
+-------------
+
+Recent begonnen met het spelen van D&D en vind de website en app van DnDBeyond handig, maar het inventarisatie onderdeel vond ik niet ok.
+Je kan dingen toevoegen, top, maar je kan niet zeggen: "Deze dingen laat ik in de Tavern/Inn achter, of in het kamp. Dus volgens de applicatie
+lijk je alles mee te zeulen. Dus er is niet goed een onderscheid van wat je effectief bij hebt op avontuur. 
+
+Zelf wil ik meer gewoon met mijn fiches spelen en niet met mijn laptop voor mij. Zodat je meer immersie hebt in het spel ipv te schuilen achter je laptop. 
+Door middel van je app op je gsm kan je die naast je leggen en enkel scrollen door je inventaris en niet door heel de website of character sheet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
