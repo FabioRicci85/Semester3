@@ -47,7 +47,7 @@ CREATE OR REPLACE TRIGGER jane_logon_tijd
 AFTER LOGON ON DATABASE
 BEGIN
     IF USER = 'JANE' THEN
-        IF TO_NUMBER(TO_CHAR(SYSDATE, 'HH24')) BETWEEN 8 AND 9 THEN
+        IF TO_NUMBER(TO_CHAR(SYSDATE, 'HH24')) BETWEEN 8 AND 10 THEN
             RAISE_APPLICATION_ERROR(-20004, 'Je mag niet inloggen tussen 08:00 en 10:00 uur.');
         END IF;
     END IF;
@@ -69,16 +69,53 @@ BEGIN
 		END IF;
 	END IF;
 END;
-
+/
 
 -- 6. De commissie van een medewerker mag maximaal met 20% verhoogd worden.
 
-CREATE OR REPLACE TRIGGER 
+CREATE OR REPLACE TRIGGER aur_comm_medewerker
+	AFTER UPDATE OF comm
+	ON student.medewerkers 
+	FOR EACH ROW
+BEGIN
+	IF (:NEW.comm - :OLD.comm > 0.2 * :OLD.comm) THEN
+		RAISE_APPLICATION_ERROR(-20006, 'Commissie mag niet hoger dan 20% zijn');
+	END IF;
+END;
+/
 
 -- 7. Een object droppen mag enkel tussen 8u en 10u.
 
+CREATE OR REPLACE TRIGGER bds_drop
+BEFORE DROP ON DATABASE
+BEGIN
+    IF TO_NUMBER(TO_CHAR(SYSDATE, 'HH24')) NOT BETWEEN 8 AND 10 THEN
+        RAISE_APPLICATION_ERROR(-20007, 'Je mag enkel droppen tussen 8u en 10u');
+    END IF;
+END;
+/
 
 
 -- 8. Een nieuwe cursus mag enkel een lengte van 1 hebben èn wanneer een cursus wijzigt met de lengte maximaal met 3 stappen verhoogd of verlaagd worden. 
 -- Foutmelding aanmaken: ORA-20000: Bij het aanmaken van een cursus moet de lengte 1 zijn! Foutmelding wijzigen: ORA-20001: 
 -- Bij het wijzigen van een cursus mag de lengte max 3 eenheden verschillen! (huidig: 1 nieuw: 5)
+
+CREATE OR REPLACE TRIGGER bis_cursus_lengte
+BEFORE INSERT OR UPDATE ON student.cursus
+BEGIN
+    IF INSERTING THEN
+        IF :NEW.lengte != 1 THEN
+            RAISE_APPLICATION_ERROR(-20000, 'Bij het aanmaken van een cursus moet de lengte 1 zijn!');
+        END IF;
+        
+    ELSIF UPDATING THEN
+        IF ABS(:NEW.lengte - :OLD.lengte) > 3 THEN
+            RAISE_APPLICATION_ERROR(
+                -20001,
+                'Bij het wijzigen van een cursus mag de lengte max 3 eenheden verschillen! (huidig: ' 
+                || :OLD.lengte || ' nieuw: ' || :NEW.lengte || ')'
+            );
+        END IF;
+    END IF;
+END;
+/
