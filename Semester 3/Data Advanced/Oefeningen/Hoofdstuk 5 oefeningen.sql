@@ -32,3 +32,30 @@ BEGIN
 	END IF;
 END;
 /
+
+--oefeningen 3
+--------------
+
+
+
+
+
+--4. Schrijf een PL/SQL-script dat een overzicht maakt van het aantal medewerkers voor elk departement (afd) 
+--in de tabel "medewerkers". Het script moet het aantal medewerkers per departement weergeven met behulp van 
+--DBMS_OUTPUT.PUT_LINE(). Druk de volgende regel af per afdeling: ‘Aantal medewerkers in afdeling 
+--{departement naam}: {aantal medewerkers per departement}’
+
+DECLARE
+	CURSOR a_afd is Select afd from student.afdelingen;
+	count_mdw pls_integer;
+	a_departement student.afdelingen.anr%TYPE;
+BEGIN
+	FOR afdelingen IN a_afd LOOP
+	
+	a_departement = afdeling.anr;
+	
+	SELECT COUNT(*) INTO count_mdw FROM student.medewerkers WHERE anr = a_departement;
+
+	DBMS_OUTPUT.PUT_LINE('In de afdeling '|| a_departement || ' zijn er '|| count_mdw || ' aanwezig.'); 
+END;
+/
